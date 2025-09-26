@@ -21,3 +21,9 @@ export interface PostModalProps {
     onSubmit: (post: Omit<CardProps, 'id'>) => void;
 }
 
+export interface PostProps {
+  id?: number;
+  userId: number;
+  title: string;
+  content: string;
+}
