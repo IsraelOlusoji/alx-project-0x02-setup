@@ -19,10 +19,14 @@ const Button = ({
   size = "medium",
   shape = "rounded-md",
   className = "",
+  onClick,
+  type = "button",
 }: ButtonProps) => {
   return (
     <div>
       <button
+        type={type}
+        onClick={onClick}
         className={`${styles} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`}
       >
         {title}
