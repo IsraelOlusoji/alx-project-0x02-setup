@@ -44,7 +44,6 @@ export const getStaticProps: GetStaticProps = async () => {
       id: user.id,
       name: user.name,
       email: user.email,
-    
       address: {
         street: user.address.street,
         suite: user.address.suite,
