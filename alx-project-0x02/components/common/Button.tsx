@@ -1,6 +1,5 @@
-import React from 'react'
-import { ButtonProps } from '@/interfaces'
-
+import React from "react";
+import { type ButtonProps } from "@/interfaces";
 
 const sizeClasses = {
   small: "text-sm px-2 py-1",
@@ -14,12 +13,22 @@ const shapeClasses = {
   "rounded-full": "rounded-full",
 };
 
-const Button = ({ title, styles, size = "medium", shape = "rounded-md", className = "" }: ButtonProps) => {
+const Button = ({
+  title,
+  styles,
+  size = "medium",
+  shape = "rounded-md",
+  className = "",
+}: ButtonProps) => {
   return (
     <div>
-        <button className={`${styles} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`}>{title}</button>
+      <button
+        className={`${styles} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`}
+      >
+        {title}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
