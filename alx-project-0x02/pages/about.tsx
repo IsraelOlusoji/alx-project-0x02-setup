@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
 
 const About = () => {
   return (
     <div>
+      <Header />
       <h1 className="text-4xl font-bold">About Page</h1>
       <div className="flex gap-4">
         <Button

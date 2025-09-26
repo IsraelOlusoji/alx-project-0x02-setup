@@ -3,6 +3,7 @@ import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
 import Button from "@/components/common/Button";
 import { type CardProps } from "@/interfaces";
+import Header from "@/components/layout/Header";
 
 const Home = () => {
   const [posts, setPosts] = useState<CardProps[]>([
@@ -37,6 +38,7 @@ const Home = () => {
 
   return (
     <div className="p-4 container mx-auto">
+      <Header />
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-4xl font-bold">Welcome to alx-project-2 🚀</h1>
         <Button
